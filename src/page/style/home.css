@@ -1,0 +1,205 @@
+.inner_design{
+    box-shadow: 0.5rem black, 0.5rem #ccc;
+    height: 200px;
+}
+.Banner{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/021/548/492/small/minimal-abstract-dark-blue-gradient-banner-background-design-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+.custom-banner-text{
+    font-size: 18px;
+}
+.custom-button{
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color:#ff9f43;
+    color: white;
+    border-color: 2px solid #ff9f43;
+    transition: 1s;
+}
+.custom-button:hover{
+    background-color: #bbc473da;
+    /* transition: 0.5s; */
+    transform: scale(1.1);
+}
+.roundImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+   
+    text-align: center;
+    transition: 1s;
+}
+.roundImg:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.roundImg:hover{
+    opacity: 1;
+    box-shadow: -8px 8px   5px#00c6ff;
+}
+.lady_round{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 1s;
+  }
+  .lady_round:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    opacity: 1;
+    box-shadow: -8px 8px   5px#d6bf3d7b;
+  }
+
+.letter_custom{
+    transition: 1s;
+}
+.letter_custom:hover{
+    transform: scale(1.1);
+    color:#39ff14;
+}
+.lumina_intro{
+    background-image: url('https://images.squarespace-cdn.com/content/v1/58c30603197aea79a99dd2b6/1654826906528-T8KQ6K1URAES4Q3X5AI4/star+3.gif?format=2500w');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .who_lumina_head{
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    
+} */
+
+:root {
+    --k: 0;
+  }
+  
+  html, body {
+    display: grid;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    background: #000;
+  }
+  
+  p.who_lumina_head {
+    --k: 0;
+    place-self: center;
+    background: linear-gradient(
+      90deg,
+      hsl(calc(var(--k) * 1turn), 95%, 65%),
+      hsl(calc(var(--k) * 1turn + 90deg), 95%, 65%)
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font: 900 clamp(0.875em, 7.25vw, 5em) arial black, sans-serif;
+    filter: url(#f); /* Applies the glow effect from the SVG filter */
+    text-align: center;
+    text-transform: uppercase;
+    animation: k 4s linear infinite;
+  }
+  
+  @keyframes k {
+    to {
+      --k: 1;
+    }
+  }
+  
+
+  /* HER STORY SECTION */
+  .her_story_imgbg{
+    background-image: url('https://gifdb.com/images/high/black-background-dark-wings-cl0wj65d1d3ptxny.gif');
+    width:100%;
+    
+  }
+  .her_story_eye_child{
+    width:200px;
+    justify-content: center;
+  }
+  .eyeImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-left: 50px;
+  }
+
+
+ /* ternimols */
+ .card{
+
+  height: 300px;
+  background-color:black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 40px;
+
+ }
+ .card p{
+   z-index: 1;
+   color: white;
+  
+
+ }
+ .card::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg,rgb(152, 173, 181),#00ffff5f);
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+ }
+ @keyframes rotBGimg {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+ }
+ .card::after{
+  content: '';
+  position: absolute;
+  background: black;
+  inset:5px;
+  border-radius: 15px;
+ }
+ .round_user{
+   width: 250px;
+  height: 250px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  border-radius: 50%; 
+  z-index:1;
+  transition: 1s;
+  text-align:center;
+ 
+ }
+
+
+.round_user:hover{
+  transform: scale(1.1);
+  z-index: 2;
+  opacity: 1;
+  box-shadow: -8px 8px   5px #00FFFF;
+}
+.icon_user{
+  z-index: 1;
+  font-size: 30px;
+}
